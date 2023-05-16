@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Slider</title>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Завдання мінімум:
+    Збільшити створений на уроці слайдер до 5 елементів в обох частинах та замінити розташування лівої частини з правою (кольорова частина праворуч, частина з зображеннями ліворуч, ширину частин не змінювати)
+    Завдання максимум:
+    Збільшити створений на уроці слайдер до 5 елементів в кожній частині та переробити слайдер з вертикального на горизонтальний(частину з кольоровим заповненням розташувати в нижній частині екрану, частину з зображенями в верхній, рух слайдів зробити горизонтальним (ліво-право)) -->
+
+    <div class="slider">
+
+        <div class="slider__bottom">
+            <div style="background: rgb(96, 143, 185, 1);">
+                <h1>Tor</h1>
+            </div>
+            <div style="background: rgb(154, 60, 156, 1);">
+                <h1>Tanos</h1>
+            </div>
+            <div style="background: rgb(226, 167, 87, 1);">
+                <h1>Rosamaha</h1>
+            </div>
+            <div style="background: rgb(94, 141, 202, 1);">
+                <h1>Iron Man</h1>
+            </div>
+            <div style="background: rgb(127, 61, 67, 1);">
+                <h1>DeadPool</h1>
+            </div>
+        </div>
+        <div class="slider__top">
+            <div class="deadPool" style="background-image: url(./images/deadpool.jpg);"></div>
+            <div class="ironMan" style="background-image: url(./images/Iron-Man.jpg);"></div>
+            <div class="rosamaha" style="background-image: url(./images/Rosmaha.jpg);"></div>
+            <div class="taonos" style="background-image: url(./images/Tanos.jpg);"></div>
+            <div class="tor" style="background-image: url(./images/Tor.jpg);"></div>
+        </div>
+        <div class="slider__buttons">
+            <button class="back-btn">
+                <ion-icon name="arrow-back-circle-outline"></ion-icon>
+            </button><button class="forward-btn">
+                <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+            </button>
+        </div>
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

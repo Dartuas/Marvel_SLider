@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Caveat:regular,500,600,700);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Caveat", cursive;
+}
+
+#firework {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+.slider {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.slider__bottom {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 25%;
+  width: 500%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+.slider__bottom div {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.slider__bottom div h1 {
+  font-size: 60px;
+  position: absolute;
+  top: 30%;
+  right: 45%;
+}
+.slider__top {
+  display: flex;
+  height: 75%;
+  width: 500%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+.slider__top div {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.ironMan, .rosamaha {
+  background-position: center center;
+}
+.slider__buttons {
+  display: flex;
+  gap: 1000px;
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+}
+.slider__buttons .back-btn,
+.slider__buttons .forward-btn {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border: none ;
+  color:#c8c3c3;
+  cursor: pointer;
+  font-size: 32px;
+  padding: 10px;
+  display: flex;
+}
+.slider__buttons .back-btn {
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 50%;
+}
+.slider__buttons .forward-btn {
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 50%;
+}
